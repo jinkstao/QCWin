@@ -1,13 +1,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
+#include <QWidget>
 
 namespace Ui {
 class MainForm;
 }
 
-class MainForm : public QMainWindow
+class MainForm : public QWidget
 {
     Q_OBJECT
 
