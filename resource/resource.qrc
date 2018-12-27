@@ -5,6 +5,6 @@
         <file>images/minimize.png</file>
     </qresource>
     <qresource prefix="/qss">
-        <file>theme/darkorange.qss</file>
+        <file>theme/style.qss</file>
     </qresource>
 </RCC>

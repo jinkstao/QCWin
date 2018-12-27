@@ -10,7 +10,6 @@ SET(CMAKE_AUTOUIC ON) # UI files
 # Find the QtWidgets library
 FIND_PACKAGE(Qt5 REQUIRED core widgets)
 
-
 #LINK_DIRECTORIES(src)
 
 SET(EXECUTABLE_OUTPUT_PATH bin)
@@ -21,6 +20,10 @@ ADD_SUBDIRECTORY(resource)
 
 # Add Main Module
 ADD_SUBDIRECTORY(src)
-INCLUDE_DIRECTORIES(src/MainForm src/Title)
+
+ADD_SUBDIRECTORY(include)
+INCLUDE_DIRECTORIES(include)
 
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} Qt5::Widgets)
+
+SET(CMAKE_BUILD_TYPE Release)

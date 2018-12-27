@@ -6,8 +6,6 @@ MainForm::MainForm(QWidget *parent) :
     ui(new Ui::MainForm)
 {
     ui->setupUi(this);
-    setWindowFlag(Qt::SplashScreen);
-    ui->ttlTitle->setWidgetParent(this);
 }
 
 MainForm::~MainForm()
